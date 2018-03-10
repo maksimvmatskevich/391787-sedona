@@ -14,7 +14,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -22,6 +22,7 @@
 
     <main class="container">
       <section class="picture">
+        <h2 class="visually-hidden">Изображние Седоны</h2>
         <img src="img/intro-top.png" alt="Горы Седоны">
       </section>
       <div class="container-headline">
@@ -91,14 +92,35 @@
 
 
       <section class="map">
+        <h2 class="visually-hidden">Карта штата</h2>
         <img src="img/map.jpg" width="1200" height="593" alt="Карта проезда">
-        <!-- Здесь будет интерактивная карта -->
       </section>
 
 
       <section class="popup">
-      <p>Поиск гостиницы в седоне</p>
-      <!-- Здесь будет форма -->
+        <h2 class="visually-hidden">Форма поиска</h2>
+        <button>Поиск гостиницы в седоне</button>
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <ul>
+            <li class="booking-option">
+              <label for="check-in">Дата заезда:</label>
+              <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
+            </li>
+            <li class="booking-option">
+              <label for="check-out">Дата выезда:</label>
+              <input type="text" name="check-in" id="check-out" placeholder="4 июля 2017">
+            </li>
+            <li class="booking-option">
+              <label for="adults">Взрослые:</label>
+              <input type="text" name="adults" id="adults" placeholder="2">
+            </li>
+            <li class="booking-option">
+              <label for="children">Дети:</label>
+              <input type="text" name="children" id="children" placeholder="0">
+            </li>
+          </ul>
+          <button type="submit">Найти</button>
+        </form>
       </section>
     </main>
 
@@ -107,14 +129,14 @@
       <p>#visitsedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">twitter</a></li>
-          <li><a class="social-button" href="#">facebook</a></li>
-          <li><a class="social-button" href="#">youtube</a></li>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
         </ul>
       </div>
       <div class="html-academy">
         <p>Website by</p>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </footer>
   </body>

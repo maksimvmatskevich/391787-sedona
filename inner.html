@@ -21,13 +21,58 @@
 
 
     <section class="filters">
-            <!-- Здесь будет форма -->
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+          <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="filter-wi-fi">
+              <label for="filter-wi-fi">Wi-Fi</label>
+          </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки(Р):</legend>
+          <label class="range">
+            <b>От 0</b>
+            <b>До 3000</b>
+            <input type="range" name="range">
+          </label>
+        </fieldset>
+        <button class="filter-button" type="submit">Показать</button>
+      </form>
     </section>
 
 
     <section class="sorting">
-      <!-- Здесь будет сортировка -->
-      <p>Сортировка:</p>
+      <h2 class="visually-hidden">Сортировка товаров по цене, по типу, по рейтингу</h2>
+      <p>Найдено: 3</p>
       <ul>
         <li><a>По цене</a></li>
         <li><a>По типу</a></li>
@@ -120,14 +165,14 @@
       <p>#visitsedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">twitter</a></li>
-          <li><a class="social-button" href="#">facebook</a></li>
-          <li><a class="social-button" href="#">youtube</a></li>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
         </ul>
       </div>
       <div class="html-academy">
         <p>Website by</p>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </footer>
   </body>
