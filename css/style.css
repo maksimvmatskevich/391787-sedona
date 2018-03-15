@@ -14,6 +14,17 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .site-navigation {
   list-style: none;
   line-height: 26px;
@@ -42,7 +53,7 @@ a {
   line-height: 26px;
 }
 
-.container-headline p:nth-child(2) {
+.container-headline .five {
   font-weight: 400;
   line-height: 26px;
   color: #333333;
@@ -66,7 +77,7 @@ a {
   font-size: 21px;
 }
 
-.feature-item p {
+.feature-item {
   font-weight: 400;
   color: #333333;
 }
@@ -80,7 +91,7 @@ a {
   line-height: 36px;
 }
 
-.subtitle p:nth-child(2) {
+.subtitle .clarification {
   font-weight: 400;
   line-height: 24px;
   color: #333333;
@@ -150,6 +161,16 @@ a {
   border: 2px solid #e5e5e5;
 }
 
+.booking-option input::placeholder {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.visit {
+  font-size: 21px;
+  line-height: 26px;
+}
+
 .footer-social {
   text-align: center;
 }
@@ -160,6 +181,11 @@ a {
 
 .social-button {
   color: #000000;
+}
+
+.html-academy p {
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .site-navigation .active-page {
@@ -181,6 +207,10 @@ a {
 
 .filter fieldset {
   border: none;
+}
+
+.filter ul {
+  list-style: none;
 }
 
 fieldset .price {
@@ -207,11 +237,17 @@ fieldset .price {
   line-height: 26px;
 }
 
-.sort {
+.sorting .sort {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.sort-options {
   list-style: none;
 }
 
-.sort .sort-active {
+.sort-options.sort-active {
   color: #81b3d2;
 }
 
