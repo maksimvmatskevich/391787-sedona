@@ -92,32 +92,34 @@
         <div class="subtitle">
           <p>Заинтересовались?</p>
           <p class="clarification">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <div class="button-wraper">
+            <button class="button brown">Поиск гостиницы в седоне</button>
+            <section class="popup">
+              <h2 class="visually-hidden">Форма бронирования гостиницы</h2>
+              <form method="post" action="https://echo.htmlacademy.ru">
+                <ul class="booking">
+                  <li class="booking-option">
+                    <label for="check-in">Дата заезда:</label>
+                    <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
+                  </li>
+                  <li class="booking-option">
+                    <label for="check-out">Дата выезда:</label>
+                    <input type="text" name="check-in" id="check-out" placeholder="4 июля 2017">
+                  </li>
+                  <li class="booking-option adults-children">
+                    <label for="adults">Взрослые:</label>
+                    <input type="text" name="adults" id="adults" placeholder="2">
+                  </li>
+                  <li class="booking-option adults-children">
+                    <label for="children">Дети:</label>
+                    <input type="text" name="children" id="children" placeholder="0">
+                  </li>
+                </ul>
+                <button class="button blue" type="submit">Найти</button>
+              </form>
+            </section>
+          </div>
         </div>
-        <section class="popup">
-          <h2 class="visually-hidden">Форма бронирования гостиницы</h2>
-          <button class="button brown">Поиск гостиницы в седоне</button>
-          <form method="post" action="https://echo.htmlacademy.ru">
-            <ul class="booking">
-              <li class="booking-option">
-                <label for="check-in">Дата заезда:</label>
-                <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
-              </li>
-              <li class="booking-option">
-                <label for="check-out">Дата выезда:</label>
-                <input type="text" name="check-in" id="check-out" placeholder="4 июля 2017">
-              </li>
-              <li class="booking-option">
-                <label for="adults">Взрослые:</label>
-                <input type="text" name="adults" id="adults" placeholder="2">
-              </li>
-              <li class="booking-option">
-                <label for="children">Дети:</label>
-                <input type="text" name="children" id="children" placeholder="0">
-              </li>
-            </ul>
-            <button class="button blue" type="submit">Найти</button>
-          </form>
-        </section>
       </section>
 
       <section class="map">
