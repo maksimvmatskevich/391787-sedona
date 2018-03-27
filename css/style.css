@@ -1,4 +1,4 @@
-*, *!:before, *!:after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -49,6 +49,7 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 16.5px 6%;
 
@@ -339,6 +340,11 @@ ul.booking {
 
 .booking-option.adults-children input {
   width: 20px;
+}
+
+.booking-option.adults-children label.children {
+  width: 28%;
+  padding-left: 52px;
 }
 
 button.minus {
@@ -638,6 +644,20 @@ a.academy:active path {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -2px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -648,6 +668,20 @@ a.academy:active path {
   height: 23px;
 
   background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
