@@ -238,6 +238,10 @@ main.container {
   width: 34%;
 }
 
+.features {
+  background-color: #ffffff;
+}
+
 .features .wrapper {
   display: flex;
 }
@@ -509,6 +513,7 @@ button.plus:active::after {
 }
 
 .booking-option input {
+  min-height: 21px;
   width: 324px;
   padding: 8px;
   padding-left: 12px;
@@ -517,6 +522,12 @@ button.plus:active::after {
 
   background-color: #f2f2f2;
   border: none;
+}
+
+.booking-option input[name="check-in"],
+.booking-option input[name="check-out"] {
+  width: 291px;
+  padding-right: 40px;
 }
 
 .booking-option input:hover {
