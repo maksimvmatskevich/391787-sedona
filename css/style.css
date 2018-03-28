@@ -1,6 +1,5 @@
 html {
   background-color: #f2f2f2;
-  background-size: 1280px;
 }
 
 body {
@@ -184,6 +183,7 @@ main.container {
 
   width: 8px;
   height: 1px;
+
   background-color: #ffffff;
 }
 
@@ -195,9 +195,9 @@ main.container {
 
   width: 8px;
   height: 1px;
+
   background-color: #ffffff;
 }
-
 
 .image-block {
   background-color: #81b3d2;
@@ -224,9 +224,10 @@ main.container {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 87px;
   margin-top: 7px;
   margin-bottom: 24px;
-  height: 87px;
 }
 
 .feature-2 {
@@ -283,6 +284,7 @@ main.container {
 
   width: 8px;
   height: 1px;
+
   background-color: #000000;
 }
 
@@ -294,6 +296,7 @@ main.container {
 
   width: 8px;
   height: 1px;
+
   background-color: #000000;
 }
 
@@ -307,6 +310,7 @@ main.container {
 .subtitle p:first-child {
   margin: 0;
   margin-bottom: 25px;
+
   font-size: 30px;
   line-height: 36px;
 }
@@ -321,9 +325,9 @@ main.container {
 }
 
 .button {
-  font: inherit;
-
   text-align: center;
+
+  font: inherit;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
@@ -341,6 +345,7 @@ main.container {
   left: 0;
   right: 0;
   top: 100%;
+
   padding: 55px 57px 55px 57px;
   text-align: left;
 
@@ -387,6 +392,7 @@ main.container {
 ul.booking {
     display: flex;
     flex-wrap: wrap;
+
     margin: 0;
     padding-left: 0;
 
@@ -395,9 +401,11 @@ ul.booking {
 
 .booking-option {
   position: relative;
+
   display: flex;
-  margin-bottom: 30px;
   align-items: center;
+
+  margin-bottom: 30px;
 }
 
 .booking-option.adults-children {
