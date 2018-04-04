@@ -5,6 +5,8 @@ var departue = document.querySelector("[name=check-out]");
 var adults = document.querySelector("[name=adults]");
 var children = document.querySelector("[name=children]");
 
+popup.classList.add("modal-close");
+
 button.addEventListener("click", function () {
   popup.classList.toggle("modal-close");
   popup.classList.remove("modal-error");
